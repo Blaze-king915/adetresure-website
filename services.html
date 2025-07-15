@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Services | Ade-Treasure</title>
+  <link rel="icon" href="favicon.png" type="image/png" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#3B82F6",
+            dark: "#1E3A8A"
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-blue-50 text-gray-800 font-sans">
+
+  <!-- ✅ Navbar -->
+  <nav class="bg-primary text-white px-6 py-4 shadow">
+    <div class="flex justify-between items-center max-w-6xl mx-auto">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 bg-white rounded-full overflow-hidden">
+          <img src="logo.png" alt="logo" class="w-full h-full object-cover">
+        </div>
+        <span class="text-xl font-bold">Ade-Treasure</span>
+      </div>
+      <div class="md:hidden">
+        <button onclick="document.getElementById('mobileMenu').classList.toggle('hidden')" class="text-white text-2xl">☰</button>
+      </div>
+      <ul class="hidden md:flex gap-6 text-sm font-medium">
+        <li><a href="index.html" class="hover:underline">Home</a></li>
+        <li><a href="about.html" class="hover:underline">About</a></li>
+        <li><a href="services.html" class="underline font-bold text-white">Services</a></li>
+        <li><a href="training.html" class="hover:underline">Training</a></li>
+        <li><a href="contact.html" class="hover:underline">Contact</a></li>
+        <li><a href="gallery.html" class="hover:underline">Gallery</a></li>
+      </ul>
+    </div>
+
+    <!-- ✅ Mobile Menu -->
+    <ul id="mobileMenu" class="md:hidden bg-blue-100 text-primary px-6 py-4 space-y-2 hidden text-sm">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html" class="font-semibold">Services</a></li>
+      <li><a href="training.html">Training</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+
+  <!-- ✅ Services Header -->
+  <section class="py-12 px-6 text-center">
+    <h1 class="text-3xl font-bold mb-4">Our Core Services</h1>
+    <p class="max-w-2xl mx-auto mb-8">
+      We offer everything from internet access to tech training and online support. Explore the full range of what we do below.
+    </p>
+  </section>
+
+  <!-- ✅ Services Grid -->
+  <section class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto px-6 pb-20">
+    <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition">
+      <img src="int browsing.jpg" alt="Browsing" class="rounded mb-4 w-full">
+      <h3 class="font-bold text-lg mb-2">Internet Browsing</h3>
+      <p>Fast, stable internet for emails, research, school portals and more.</p>
+    </div>
+
+    <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition">
+      <img src="printing.jpeg" alt="Printing" class="rounded mb-4 w-full">
+      <h3 class="font-bold text-lg mb-2">Printing & Scanning</h3>
+      <p>Print black & white or colored documents. Also scan ID cards, photos, forms etc.</p>
+    </div>
+
+    <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition">
+      <img src="cmp training.jpg" alt="Training" class="rounded mb-4 w-full">
+      <h3 class="font-bold text-lg mb-2">Computer Training</h3>
+      <p>MS Word, Excel, Typing, Graphics Design, Internet Skills & more.</p>
+    </div>
+
+    <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition">
+      <img src="ex reg.jpg" alt="Registration" class="rounded mb-4 w-full">
+      <h3 class="font-bold text-lg mb-2">Exam Registrations</h3>
+      <p>WAEC, NECO, JAMB, NABTEB, NIN linking, change of institution and more.</p>
+    </div>
+
+    <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition">
+      <img src="online [ayment.webp" alt="Remita" class="rounded mb-4 w-full">
+      <h3 class="font-bold text-lg mb-2">Online Payments</h3>
+      <p>Remita, School Fees, NYSC, CBN, Job Forms — safe and secure assistance.</p>
+    </div>
+
+    <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition">
+      <img src="typing.webp" alt="Typing" class="rounded mb-4 w-full">
+      <h3 class="font-bold text-lg mb-2">Typing & Projects</h3>
+      <p>Professional document typing, project work, CVs and business letters.</p>
+    </div>
+  </section>
+
+  <!-- ✅ Footer -->
+  <footer class="bg-dark text-white text-center py-4">
+    <p>&copy; 2025 Ade-Treasure Computer Institute</p>
+  </footer>
+
+</body>
+</html>

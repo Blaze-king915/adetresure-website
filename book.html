@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book a Service | Ade-Treasure</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-blue-50 text-gray-800 font-sans">
+
+  <!-- Navbar (copy the new mobile nav from above here) -->
+
+  <section class="py-12 px-6 text-center">
+    <h1 class="text-3xl font-bold mb-4">Book a Service</h1>
+    <p class="max-w-xl mx-auto">Need printing, typing, or training? Send a request — we’ll call you back!</p>
+  </section>
+
+  <section class="max-w-lg mx-auto bg-white p-6 rounded shadow mb-20">
+    <form action="https://formspree.io/f/your-form-id" method="POST" class="space-y-4">
+      <input type="text" name="name" placeholder="Your Full Name" required class="w-full p-3 border rounded" />
+      <input type="tel" name="phone" placeholder="Phone Number" required class="w-full p-3 border rounded" />
+      <select name="service" required class="w-full p-3 border rounded">
+        <option value="">Select a Service</option>
+        <option>Printing</option>
+        <option>Typing</option>
+        <option>WAEC/JAMB Registration</option>
+        <option>Training Program</option>
+      </select>
+      <textarea name="message" rows="4" placeholder="Extra Info (optional)" class="w-full p-3 border rounded"></textarea>
+      <button type="submit" class="bg-primary text-white px-6 py-2 rounded hover:bg-blue-700 transition">Submit</button>
+    </form>
+  </section>
+
+  <footer class="bg-dark text-white text-center py-4">
+    <p>&copy; 2025 Ade-Treasure Computer Institute</p>
+  </footer>
+
+</body>
+</html>

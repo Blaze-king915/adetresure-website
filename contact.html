@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Ade-Treasure</title>
+  <link rel="icon" href="favicon.png" type="image/png" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#3B82F6",
+            dark: "#1E3A8A"
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-blue-50 text-gray-800 font-sans">
+
+  <!-- ✅ Navbar -->
+  <nav class="bg-primary text-white px-6 py-4 shadow">
+    <div class="flex justify-between items-center max-w-6xl mx-auto">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 bg-white rounded-full overflow-hidden">
+          <img src="logo.png" alt="logo" class="w-full h-full object-cover" />
+        </div>
+        <span class="text-xl font-bold">Ade-Treasure</span>
+      </div>
+      <div class="md:hidden">
+        <button onclick="document.getElementById('mobileMenu').classList.toggle('hidden')" class="text-white text-2xl">☰</button>
+      </div>
+      <ul class="hidden md:flex gap-6 text-sm font-medium">
+        <li><a href="index.html" class="hover:underline">Home</a></li>
+        <li><a href="about.html" class="hover:underline">About</a></li>
+        <li><a href="services.html" class="hover:underline">Services</a></li>
+        <li><a href="training.html" class="hover:underline">Training</a></li>
+        <li><a href="contact.html" class="underline font-bold text-white">Contact</a></li>
+        <li><a href="gallery.html" class="hover:underline">Gallery</a></li>
+      </ul>
+    </div>
+
+    <!-- ✅ Mobile Menu -->
+    <ul id="mobileMenu" class="md:hidden bg-blue-100 text-primary px-6 py-4 space-y-2 hidden text-sm">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="training.html">Training</a></li>
+      <li><a href="contact.html" class="font-semibold">Contact</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+
+  <!-- ✅ Contact Header -->
+  <section class="py-12 px-6 text-center">
+    <h1 class="text-3xl font-bold mb-4">Get In Touch</h1>
+    <p class="max-w-xl mx-auto">
+      Need help with printing, registrations or training? Reach out today!
+    </p>
+  </section>
+
+  <!-- ✅ Contact Info & Form -->
+  <section class="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto px-6 pb-20">
+    <!-- Left: Info -->
+    <div class="bg-white p-6 rounded-lg shadow">
+      <h2 class="text-xl font-semibold mb-3">📍 Our Office</h2>
+      <p>No. 6, Seyi Omoguwa Road,<br />Lakowe Phase 2, Ibeju-Lekki, Lagos, Nigeria</p>
+
+      <h2 class="text-xl font-semibold mt-6 mb-3">📞 Contact</h2>
+      <p>Phone: <a href="tel:08050737920" class="text-primary font-medium">08050737920</a></p>
+      <p>WhatsApp: <a href="https://wa.me/2348050737920" class="text-primary font-medium">Chat Us</a></p>
+      <p>Email: <a href="mailto:destinyejeziem@gmail.com" class="text-primary font-medium">destinyejeziem@gmail.com</a></p>
+
+      <h2 class="text-xl font-semibold mt-6 mb-3">⏰ Opening Hours</h2>
+      <p>Mon – Sat: 8:00 AM – 8:00 PM</p>
+      <p>Sun: Closed</p>
+    </div>
+
+    <!-- Right: FormKeep Embed -->
+    <div class="bg-white p-6 rounded-lg shadow">
+      <h2 class="text-xl font-semibold mb-4">📥 Send a Message</h2>
+      <div id="formkeep-embed" data-formkeep-url="https://formkeep.com/p/0df6db168d563d8edab31f468143b72a?embedded=1"></div>
+    </div>
+  </section>
+
+  <!-- ✅ Google Map -->
+  <section class="px-6 pb-20 max-w-6xl mx-auto">
+    <h2 class="text-xl font-bold mb-4 text-center">📍 Find Us on the Map</h2>
+    <iframe
+      class="w-full h-80 rounded shadow"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.9395979617124!2d3.650133774050722!3d6.462476123015285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf8e035fa02a5%3A0x9a6e7e01cd046a79!2sLakowe%20Phase%202!5e0!3m2!1sen!2sng!4v1699804207481!5m2!1sen!2sng"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </section>
+
+  <!-- ✅ Footer -->
+  <footer class="bg-dark text-white text-center py-4">
+    <p>&copy; 2025 Ade-Treasure Computer Institute</p>
+  </footer>
+
+  <!-- FormKeep scripts -->
+  <script type="text/javascript" src="https://pym.nprapps.org/pym.v1.min.js"></script>
+  <script type="text/javascript" src="https://cdn.formkeep.com/formkeep-embed.js"></script>
+  <script>
+    const formkeepEmbed = document.querySelector('#formkeep-embed');
+
+    formkeepEmbed.addEventListener('formkeep-embed:submitting', _event => {
+      console.log('Submitting form...');
+    });
+
+    formkeepEmbed.addEventListener('formkeep-embed:submitted', _event => {
+      console.log('Submitted form...');
+      alert('Thank you for contacting us! We will get back to you soon.');
+    });
+  </script>
+
+</body>
+</html>

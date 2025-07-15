@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | Ade-Treasure</title>
+  <link rel="icon" href="favicon.png" type="image/png" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#3B82F6",
+            dark: "#1E3A8A"
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-blue-50 text-gray-800 font-sans">
+
+  <!-- ✅ NAVBAR -->
+  <nav class="bg-primary text-white px-6 py-4 shadow">
+    <div class="flex justify-between items-center max-w-6xl mx-auto">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 bg-white rounded-full overflow-hidden">
+          <img src="logo.png" alt="logo" class="w-full h-full object-cover">
+        </div>
+        <span class="text-xl font-bold">Ade-Treasure</span>
+      </div>
+      <div class="md:hidden">
+        <button onclick="document.getElementById('mobileMenu').classList.toggle('hidden')" class="text-white text-2xl">☰</button>
+      </div>
+      <ul class="hidden md:flex gap-6 text-sm font-medium">
+        <li><a href="index.html" class="hover:underline">Home</a></li>
+        <li><a href="about.html" class="underline font-bold text-white">About</a></li>
+        <li><a href="services.html" class="hover:underline">Services</a></li>
+        <li><a href="training.html" class="hover:underline">Training</a></li>
+        <li><a href="contact.html" class="hover:underline">Contact</a></li>
+        <li><a href="gallery.html" class="hover:underline">Gallery</a></li>
+      </ul>
+    </div>
+
+    <!-- ✅ MOBILE MENU -->
+    <ul id="mobileMenu" class="md:hidden bg-blue-100 text-primary px-6 py-4 space-y-2 hidden text-sm">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="font-semibold">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="training.html">Training</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+
+  <!-- ✅ ABOUT SECTION -->
+  <section class="py-16 px-6 text-center bg-white">
+    <h1 class="text-3xl font-bold mb-4">About Ade-Treasure</h1>
+    <p class="max-w-3xl mx-auto mb-8">
+      Ade-Treasure Computer Institute was founded in early 2020 with the vision of bringing top-quality digital services and computer training to the Ibeju-Lekki community. Since our launch, we've helped over 2,000 customers and trained 200+ students in tech and business skills.
+    </p>
+
+    <div class="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto text-left items-center">
+      <div>
+        <h2 class="text-xl font-semibold mb-2">🎯 Our Mission</h2>
+        <p class="mb-6">
+          To empower people through affordable, accessible, and practical digital services and training — from browsing to business tools.
+        </p>
+
+        <h2 class="text-xl font-semibold mb-2">🌍 Our Vision</h2>
+        <p class="mb-6">
+          To be the number one community-based digital hub in Nigeria — where everyone can learn, print, browse, or grow.
+        </p>
+
+        <h2 class="text-xl font-semibold mb-2">✨ What Makes Us Unique</h2>
+        <ul class="list-disc ml-6 mt-2 space-y-2">
+          <li>Friendly staff and tutors</li>
+          <li>Fast and reliable printing & internet</li>
+          <li>Customized training for all ages</li>
+          <li>Trusted for WAEC, JAMB, and job applications</li>
+        </ul>
+      </div>
+
+      <div>
+        <img src="cyber-cafe.webp" alt="Our Cafe" class="rounded shadow-lg" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ FOOTER -->
+  <footer class="bg-dark text-white text-center py-4 mt-10">
+    <p>&copy; 2025 Ade-Treasure Computer Institute</p>
+  </footer>
+
+</body>
+</html>
